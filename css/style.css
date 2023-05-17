@@ -1,0 +1,103 @@
+body{
+    background: #33332d;
+    font-family: 'Courier Prime', monospace;
+    color: #fff8dc;
+}
+header{
+    background: lightgray;
+}
+h1{
+    font-size: 2em; 
+    color: #33332d;
+    display: inline;
+}
+main{
+    width: 940px;
+    margin: 0 auto;
+    background: #33332d;
+    height: 600px;
+}
+input{
+    color: #fff8dc;
+    background: #33332d;
+    width: 40%;
+    margin: auto 20px;
+    box-shadow: 3px 3px #fff8dc;
+    border-color: #fff8dc;
+}
+#encriptador{
+    width: 55%;
+    background: #33332d;
+    display: inline-block;
+    padding: 50px;
+    vertical-align: top;
+}
+#encriptador>textarea{
+    width: 100%;
+}
+#encriptador>p{
+    padding: 10px;
+    font-size: 15px;
+    text-align: left;
+}
+#encriptador img{
+    height: 15px;
+    vertical-align: text-top;
+    padding: 0 10px 0 0;
+}
+textarea{
+    background: #33332d;
+    box-shadow: 5px 5px #fff8dc;
+    border-color: #fff8dc;
+    resize: none;
+    color: #fff8dc;
+    font-size: 2em;
+}
+textarea::placeholder{
+    color: #fff8dc;
+}
+#fondo{
+    width: 30%;
+    background: #33332d;
+    display: inline-block;
+    margin: 0 0 10px 0;
+    transition: all .7s;
+}
+#fondo>img{
+    width: 200px;
+    margin: 100px 50px;
+}
+#fondo>p{
+    text-align: center;
+}
+#consola{
+    width: 30%;
+    background: #33332d;
+    display: none;
+    margin: 0 0 10px 0;
+    transition: all .7s;
+}
+#consola>textarea{
+    /*width: 90%;*/
+    margin: 5%;
+    background-size: 90%;
+}
+#consola>textarea::placeholder{
+    font-size: 12px;
+    text-align: center;
+}
+#consola>img{
+    width: 200px;
+}
+footer{
+    padding: 45px;
+    background: lightgray;
+    text-align: center;
+    color: black;
+    height: 118px;
+}
+.logo{
+    height: 25px;
+    vertical-align: middle;
+    padding: 0 10px 0 0;
+}
