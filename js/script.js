@@ -47,24 +47,34 @@ function ocultar(){
 
 function encriptar(){
     var entrada = document.getElementById("campito").value;
-    var secreto = entrada.replaceAll("e","enter");
-    secreto = secreto.replaceAll("i","imes");
-    secreto = secreto.replaceAll("a","ai");
-    secreto = secreto.replaceAll("o","ober");
-    secreto = secreto.replaceAll("u","ufat");
-    document.getElementById("consolita").value = secreto;
-    mostrar();
+        if (entrada === '') {
+            alert('No hay texto');
+        }
+        else{
+            var secreto = entrada.replaceAll("e","enter");
+            secreto = secreto.replaceAll("i","imes");
+            secreto = secreto.replaceAll("a","ai");
+            secreto = secreto.replaceAll("o","ober");
+            secreto = secreto.replaceAll("u","ufat");
+            document.getElementById("consolita").value = secreto;
+            mostrar();
+        }
 }
 
 function desEncriptar(){
     var codificado = document.getElementById("campito").value;
-    var mensaje = codificado.replaceAll("ufat","u");
-    mensaje = mensaje.replaceAll("ober","o");
-    mensaje = mensaje.replaceAll("ai","a");
-    mensaje = mensaje.replaceAll("imes","i");
-    mensaje = mensaje.replaceAll("enter","e");
-    document.getElementById("consolita").value = mensaje;
-    mostrar();
+        if (codificado === '') {
+            alert('No hay texto');
+        }
+        else{
+            var mensaje = codificado.replaceAll("ufat","u");
+            mensaje = mensaje.replaceAll("ober","o");
+            mensaje = mensaje.replaceAll("ai","a");
+            mensaje = mensaje.replaceAll("imes","i");
+            mensaje = mensaje.replaceAll("enter","e");
+            document.getElementById("consolita").value = mensaje;
+            mostrar();
+        }
 }
 
 function copiarConsola(){

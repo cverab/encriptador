@@ -14,13 +14,13 @@
     <body>
         <header>
             <!--logo-->
-            <img src="./recursos/logo.svg" alt="Logo de Alura">
-            <h1>Encriptador / Desencriptador</h1>
+            <div id="logo"><img src="./recursos/logo.svg" alt="Logo de Alura"></div>
+            <div id="titulo"><h1 id="tituloDinamico">Encriptador / Desencriptador</h1></div>
         </header>
         <main>
             <section id="encriptador">
                 <!--Cuadro de texto de entrada-->
-                <textarea cols="20" rows="12" placeholder="Ingrese texto aquí" id="campito"  onkeypress="return ((event.charCode >= 97 && event.charCode <= 122))"  ></textarea>
+                <textarea cols="20" rows="12" placeholder="Ingrese texto aquí" id="campito" onkeypress="return ((event.charCode == 32 || event.charCode >= 97 && event.charCode <= 122))"></textarea>
                 <!--Mensaje de solo usar minusculas -->
                 <p><img src="./recursos/exclamacion-w.svg" alt="Signo de admiración en un circulo negro">Solo letras Minúsculas y sin acentos</p>
                 <!--Botones encriptar/desencriptar-->
@@ -30,7 +30,7 @@
                 </section>
             </section>
             <sectiion id="fondo">
-                <img src="./recursos/incognito-w.svg" alt="Explorador arrodillado en una cueva que observa con una lupa un gran diamante">
+                <img src="./recursos/incognito-w.svg" alt="Agente secreto de incognito">
                 <p>Ningún mensaje fué encontrado</p><p>Ingrese el texto que deseas encriptar o desencriptar.</p>
             </sectiion>
             <section id="consola">

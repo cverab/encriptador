@@ -1,3 +1,6 @@
+html {
+    min-height: 100%;
+}
 body{
     background: #33332d;
     font-family: 'Courier Prime', monospace;
@@ -5,6 +8,15 @@ body{
 }
 header{
     background: lightgray;
+}
+#logo{
+    display: inline;
+}
+#logo>img{
+    margin-top: 10px;
+}
+#titulo{
+    display: inline;
 }
 h1{
     font-size: 2em; 
@@ -15,7 +27,7 @@ main{
     width: 940px;
     margin: 0 auto;
     background: #33332d;
-    height: 600px;
+    height: 650px;
 }
 input{
     color: #fff8dc;
@@ -78,9 +90,7 @@ textarea::placeholder{
     transition: all .7s;
 }
 #consola>textarea{
-    /*width: 90%;*/
     margin: 5%;
-    background-size: 90%;
 }
 #consola>textarea::placeholder{
     font-size: 12px;
@@ -90,14 +100,141 @@ textarea::placeholder{
     width: 200px;
 }
 footer{
-    padding: 45px;
+    padding: 10px;
     background: lightgray;
     text-align: center;
     color: black;
-    height: 118px;
+    position: absolute;
+    width: 100%;
 }
 .logo{
     height: 25px;
     vertical-align: middle;
     padding: 0 10px 0 0;
+}
+@media screen and (max-width:480px){
+    html{
+        position: fixed;
+    }
+    header{
+        position: fixed;
+        min-width: 100%;
+    }
+    h1{
+        font-size: medium;
+        display: table-caption;
+    }
+    main{
+        width: auto;
+        margin: 0 auto;
+        height: auto;
+    }
+    #encriptador{
+        width: 90%;
+        padding: 10px;
+    }
+    #encriptador textarea{
+        height: 300px;
+    }
+    #encriptador>p{
+        padding: 10px;
+        font-size: 13px;
+        text-align: center;
+    }
+    #encriptador img{
+        height: 13px;
+        min-height: 100%;
+        position: relative;
+    }
+    #encriptador input{
+        width: 35%;
+        margin: 10px 20px;
+    }
+    #fondo>img {
+        width: 100px;
+        margin: 10px 10px;
+        display: none;
+    }
+    #fondo p{
+        width: 370px;
+    }
+    #consola {
+        width: 100%;
+        display: none;
+        margin: 0 0 10px 0;
+        transition: all .7s;
+    }
+    #consola>textarea {
+        margin: 5%;
+        height: 80px;
+    }
+    footer{
+        height: auto;
+        font-size: small;
+        padding: 10px;
+        position: fixed;
+        min-width: 100%;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 912px){
+    html{
+        position: fixed;
+    }
+    header{
+        position: fixed;
+        min-width: 100%;
+    }
+    h1{
+        font-size: medium;
+        display: table-caption;
+    }
+    main{
+        width: auto;
+        margin: 0 auto;
+        height: auto;
+    }
+    #encriptador{
+        width: 90%;
+        padding: 10px;
+    }
+    #encriptador textarea{
+        height: 300px;
+    }
+    #encriptador>p{
+        padding: 10px;
+        font-size: 13px;
+        text-align: center;
+    }
+    #encriptador img{
+        height: 13px;
+    }
+    #encriptador input{
+        width: 35%;
+        margin: 10px 20px;
+    }
+    #fondo>img {
+        width: 100px;
+        margin: 10px 10px;
+        display: none;
+    }
+    #fondo p{
+        width: 370px;
+    }
+    #consola {
+        width: 100%;
+        display: none;
+        margin: 0 0 10px 0;
+        transition: all .7s;
+    }
+    #consola>textarea {
+        margin: 5%;
+        height: 80px;
+    }
+    footer{
+        height: auto;
+        font-size: small;
+        padding: 10px;
+        position: fixed;
+        min-width: 100%;
+    }
 }
