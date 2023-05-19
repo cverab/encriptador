@@ -78,7 +78,8 @@ function desEncriptar(){
 }
 
 function copiarConsola(){
-    var portapapeles = document.getElementById("consolita").value;
-    document.getElementById("campito").value = portapapeles;
+    var portaPapeles = document.getElementById("consolita");
+    portaPapeles.select();
+    document.execCommand('copy');
     ocultar();
 }

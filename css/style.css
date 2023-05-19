@@ -1,6 +1,10 @@
 html {
     min-height: 100%;
 }
+a:link, a:visited, a:hover, a:active{
+    color: #33332d;
+    text-decoration: none;
+}
 body{
     background: #33332d;
     font-family: 'Courier Prime', monospace;
@@ -86,7 +90,7 @@ textarea::placeholder{
     width: 30%;
     background: #33332d;
     display: none;
-    margin: 0 0 10px 0;
+    margin: 35px 0 10px 0;
     transition: all .7s;
 }
 #consola>textarea{
@@ -100,24 +104,29 @@ textarea::placeholder{
     width: 200px;
 }
 footer{
-    padding: 10px;
+    padding-top: 10px;
     background: lightgray;
     text-align: center;
     color: black;
     position: absolute;
     width: 100%;
+    bottom: 0;
 }
 .logo{
     height: 25px;
     vertical-align: middle;
     padding: 0 10px 0 0;
 }
+#pi{
+    color: #fff8dc;
+    text-align: right;
+    margin-right: 0px;
+}
+#pi>a{
+    color: lightgray;
+}
 @media screen and (max-width:480px){
-    html{
-        position: fixed;
-    }
     header{
-        position: fixed;
         min-width: 100%;
     }
     h1{
@@ -157,16 +166,20 @@ footer{
     }
     #fondo p{
         width: 370px;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
     #consola {
         width: 100%;
         display: none;
         margin: 0 0 10px 0;
         transition: all .7s;
+        height: auto;
     }
     #consola>textarea {
         margin: 5%;
         height: 80px;
+        width: 85%;
     }
     footer{
         height: auto;
@@ -177,25 +190,21 @@ footer{
     }
 }
 @media screen and (min-width: 481px) and (max-width: 912px){
-    html{
-        position: fixed;
-    }
     header{
-        position: fixed;
         min-width: 100%;
     }
     h1{
         font-size: medium;
-        display: table-caption;
+        display: table-caption;readText
     }
     main{
-        width: auto;
+        width: auto;readText
         margin: 0 auto;
         height: auto;
     }
     #encriptador{
         width: 90%;
-        padding: 10px;
+        padding: 30px;
     }
     #encriptador textarea{
         height: 300px;
@@ -212,13 +221,17 @@ footer{
         width: 35%;
         margin: 10px 20px;
     }
+    #fondo{
+        width: 100%;
+        text-align: center;
+    }
     #fondo>img {
-        width: 100px;
+        width: 90px;
         margin: 10px 10px;
         display: none;
     }
     #fondo p{
-        width: 370px;
+        width: 85%;
     }
     #consola {
         width: 100%;
@@ -229,6 +242,7 @@ footer{
     #consola>textarea {
         margin: 5%;
         height: 80px;
+        width: 85%;
     }
     footer{
         height: auto;
