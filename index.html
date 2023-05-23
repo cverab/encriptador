@@ -14,15 +14,15 @@
     <body>
         <header>
             <!--logo-->
-            <div id="logo"><img src="./recursos/logo.svg" alt="Logo de Alura"></div>
+            <div id="logo"><a href="https://www.aluracursos.com/"><img src="./recursos/logo.svg" alt="Logo de Alura"></a></div>
             <div id="titulo"><h1 id="tituloDinamico">Encriptador / Desencriptador</h1></div>
         </header>
-        <main>
+        <main id="dinamico">
             <section id="encriptador">
                 <!--Cuadro de texto de entrada-->
                 <textarea cols="20" rows="12" placeholder="Ingrese texto aquí" id="campito" onkeypress="return ((event.charCode == 32 || event.charCode >= 97 && event.charCode <= 122))"></textarea>
                 <!--Mensaje de solo usar minusculas -->
-                <p><img src="./recursos/exclamacion-w.svg" alt="Signo de admiración en un circulo negro">Solo letras Minúsculas y sin acentos</p>
+                <p><img id="exclamacion" src="./recursos/exclamacion-w.svg" alt="Signo de admiración en un circulo negro">Solo letras Minúsculas y sin acentos</p>
                 <!--Botones encriptar/desencriptar-->
                 <section id="botones">
                     <input type="button" onclick= "encriptar()" value="Encriptar">
@@ -30,7 +30,7 @@
                 </section>
             </section>
             <sectiion id="fondo">
-                <img src="./recursos/incognito-w.svg" alt="Agente secreto de incognito">
+                <img id="agente" src="./recursos/incognito-w.svg" alt="Agente secreto de incognito">
                 <p>Ningún mensaje fué encontrado<br>Ingrese el texto que deseas encriptar o desencriptar.</p>
             </sectiion>
             <section id="consola">
@@ -38,7 +38,11 @@
                 <textarea rows="10" readonly id="consolita"></textarea>                        
                 <!--boton copiar-->
                 <input type="button" value="Copiar" onclick="copiarConsola()">
-            </section> 
+            </section>
+            <!-- Modo dia-noche -->
+            <section id="visualizador">
+                <input id="modo" type="checkbox"  onclick= "diaNoche()" checked>Cambiar modo
+            </section>
         </main>
         <footer>
             <!--pie de página-->

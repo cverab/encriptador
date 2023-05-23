@@ -1,108 +1,187 @@
 html {
     min-height: 100%;
 }
-a:link, a:visited, a:hover, a:active{
+
+a:link, a:hover, a:visited{
     color: #33332d;
     text-decoration: none;
 }
+
+a:active{
+    text-shadow: 1px 1px;
+}
+
 body{
     background: #33332d;
     font-family: 'Courier Prime', monospace;
     color: #fff8dc;
+    transition: all .7s;
 }
+
+.claro{ 
+    background: #fff8dc; 
+    color: #33332d;
+    transition: all .7s;
+}
+
 header{
     background: lightgray;
 }
+
 #logo{
     display: inline;
 }
+
 #logo>img{
     margin-top: 10px;
 }
+
 #titulo{
     display: inline;
 }
+
 h1{
     font-size: 2em; 
     color: #33332d;
     display: inline;
 }
-main{
+
+#dinamico{
     width: 940px;
     margin: 0 auto;
-    background: #33332d;
     height: 650px;
 }
+
 input{
     color: #fff8dc;
     background: #33332d;
     width: 40%;
     margin: auto 20px;
     box-shadow: 3px 3px #fff8dc;
-    border-color: #fff8dc;
+    border: 1px solid #fff8dc;
+    font-family: 'Courier Prime', monospace;
 }
+
+input:active {
+    color: #33332d;
+    background: #fff8dc;
+    outline: 0;
+}
+
+input:hover {
+    outline: 0;
+    box-shadow: 0px 0px;
+}
+
+.claro input{
+    color: #33332d;
+    background: #fff8dc;
+    box-shadow: 3px 3px #33332d;
+    border: 1px solid #33332d;
+}
+
 #encriptador{
     width: 55%;
-    background: #33332d;
     display: inline-block;
     padding: 50px;
     vertical-align: top;
 }
+
 #encriptador>textarea{
     width: 100%;
 }
+
 #encriptador>p{
     padding: 10px;
     font-size: 15px;
     text-align: left;
 }
+
 #encriptador img{
     height: 15px;
     vertical-align: text-top;
     padding: 0 10px 0 0;
 }
+
 textarea{
     background: #33332d;
-    box-shadow: 5px 5px #fff8dc;
-    border-color: #fff8dc;
+    box-shadow: 3px 3px #fff8dc;
+    border: 1px solid #fff8dc;
     resize: none;
     color: #fff8dc;
     font-size: 2em;
 }
+
 textarea::placeholder{
     color: #fff8dc;
 }
+
+.claro textarea{
+    background: #fff8dc;
+    box-shadow: 3px 3px #33332d;
+    border: 1px solid #33332d;
+    resize: none;
+    color: #33332d;
+    font-size: 2em;
+}
+
+.claro textarea::placeholder{
+    color: #33332d;
+}
+
 #fondo{
     width: 30%;
-    background: #33332d;
     display: inline-block;
     margin: 0 0 10px 0;
-    transition: all .7s;
 }
+
 #fondo>img{
     width: 200px;
     margin: 100px 50px;
 }
+
 #fondo>p{
     text-align: center;
 }
+
 #consola{
     width: 30%;
-    background: #33332d;
     display: none;
     margin: 35px 0 10px 0;
     transition: all .7s;
 }
+
 #consola>textarea{
     margin: 5%;
 }
+
 #consola>textarea::placeholder{
     font-size: 12px;
     text-align: center;
 }
+
 #consola>img{
     width: 200px;
 }
+
+#visualizador{
+    text-align: right;
+}
+
+#modo{
+    cursor: pointer;
+    background-color: #33332d;
+    width: 16px;
+    height: 16px;
+    appearance: none;
+    border: 1px solid #fff8dc;
+    box-shadow: 1px 1px;
+}
+
+#modo:checked{
+    background-color: #fff8dc;
+}
+
 footer{
     padding-top: 10px;
     background: lightgray;
@@ -112,63 +191,77 @@ footer{
     width: 100%;
     bottom: 0;
 }
+
 .logo{
     height: 25px;
     vertical-align: middle;
     padding: 0 10px 0 0;
 }
+
 #pi{
     color: #fff8dc;
     text-align: right;
     margin-right: 0px;
 }
+
 #pi>a{
     color: lightgray;
 }
+
 @media screen and (max-width:480px){
     header{
         min-width: 100%;
     }
+    
     h1{
         font-size: medium;
         display: table-caption;
     }
+    
     main{
         width: auto;
         margin: 0 auto;
         height: auto;
     }
+    
     #encriptador{
         width: 90%;
         padding: 10px;
     }
+    
     #encriptador textarea{
         height: 300px;
     }
+    
     #encriptador>p{
         padding: 10px;
         font-size: 13px;
         text-align: center;
     }
+    
     #encriptador img{
         height: 13px;
         min-height: 100%;
         position: relative;
     }
+    
     #encriptador input{
         width: 35%;
         margin: 10px 20px;
     }
+    
     #fondo>img {
         width: 100px;
         margin: 10px 10px;
         display: none;
     }
+    
     #fondo p{
         width: 370px;
         padding-top: 50px;
         padding-bottom: 50px;
     }
+    
     #consola {
         width: 100%;
         display: none;
@@ -176,11 +269,17 @@ footer{
         transition: all .7s;
         height: auto;
     }
+    
     #consola>textarea {
         margin: 5%;
         height: 80px;
         width: 85%;
     }
+    
+    #visualizador{
+        margin-right: 10px;
+    }
+    
     footer{
         height: auto;
         font-size: small;
@@ -193,57 +292,70 @@ footer{
     header{
         min-width: 100%;
     }
+    
     h1{
         font-size: medium;
-        display: table-caption;readText
+        display: table-caption;
     }
+    
     main{
-        width: auto;readText
+        width: auto;
         margin: 0 auto;
         height: auto;
     }
+    
     #encriptador{
         width: 90%;
         padding: 30px;
     }
+    
     #encriptador textarea{
         height: 300px;
     }
+    
     #encriptador>p{
         padding: 10px;
         font-size: 13px;
         text-align: center;
     }
+    
     #encriptador img{
         height: 13px;
     }
+    
     #encriptador input{
         width: 35%;
         margin: 10px 20px;
     }
+    
     #fondo{
         width: 100%;
         text-align: center;
     }
+    
     #fondo>img {
         width: 90px;
         margin: 10px 10px;
         display: none;
     }
+    
     #fondo p{
         width: 85%;
     }
+    
     #consola {
         width: 100%;
         display: none;
         margin: 0 0 10px 0;
         transition: all .7s;
     }
+    
     #consola>textarea {
         margin: 5%;
         height: 80px;
         width: 85%;
     }
+    
     footer{
         height: auto;
         font-size: small;
