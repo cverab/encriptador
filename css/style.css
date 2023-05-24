@@ -109,7 +109,7 @@ textarea{
     border: 1px solid #fff8dc;
     resize: none;
     color: #fff8dc;
-    font-size: 2em;
+    font-size: 2em;font-size: 5em;
 }
 
 textarea::placeholder{
@@ -151,8 +151,8 @@ textarea::placeholder{
     transition: all .7s;
 }
 
-#consola>textarea{
-    margin: 5%;
+#consolita{
+    margin: 5%;font-size: 5em;
 }
 
 #consola>textarea::placeholder{
@@ -209,6 +209,9 @@ footer{
 }
 
 @media screen and (max-width:480px){
+    body{
+        position: fixed;
+    }
     header{
         min-width: 100%;
     }
@@ -218,6 +221,11 @@ footer{
         display: table-caption;
     }
     
+    #dinamico{
+        width: auto;
+        margin: 0 auto;
+    }
+
     main{
         width: auto;
         margin: 0 auto;
@@ -230,7 +238,7 @@ footer{
     }
     
     #encriptador textarea{
-        height: 300px;
+        height: 250px;
     }
     
     #encriptador>p{
@@ -249,7 +257,15 @@ footer{
         width: 35%;
         margin: 10px 20px;
     }
+
+    textarea{
+        font-size: 4em;
+    }
     
+    #botones{
+        text-align: center;
+    }
+
     #fondo>img {
         width: 100px;
         margin: 10px 10px;
@@ -270,12 +286,12 @@ footer{
         height: auto;
     }
     
-    #consola>textarea {
+    #consolita {
         margin: 5%;
         height: 80px;
         width: 85%;
     }
-    
+
     #visualizador{
         margin-right: 10px;
     }
@@ -289,15 +305,29 @@ footer{
     }
 }
 @media screen and (min-width: 481px) and (max-width: 912px){
+    body{
+        position: fixed;    #botolnes{
+            text-align: center;
+        }   
+    }
     header{
         min-width: 100%;
     }
     
+    #tituloDinamico{
+        font-size: 2em;
+    }
+
     h1{
         font-size: medium;
         display: table-caption;
     }
     
+    #dinamico{
+        width: auto;
+        margin: 0 auto;
+    }
+
     main{
         width: auto;
         margin: 0 auto;
@@ -310,12 +340,12 @@ footer{
     }
     
     #encriptador textarea{
-        height: 300px;
+        height: 600px;
     }
     
     #encriptador>p{
         padding: 10px;
-        font-size: 13px;
+        font-size: 2em;
         text-align: center;
     }
     
@@ -325,9 +355,18 @@ footer{
     
     #encriptador input{
         width: 35%;
-        margin: 10px 20px;
+        margin: 35px 20px;
+        font-size: 2em;
     }
     
+    textarea{
+        font-size: 5em;
+    }
+
+    #botones{
+        text-align: center;
+    }
+
     #fondo{
         width: 100%;
         text-align: center;
@@ -339,8 +378,9 @@ footer{
         display: none;
     }
     
-    #fondo p{
-        width: 85%;
+    #fondo>p{
+        width: 95%;
+        font-size: 2em;
     }
     
     #consola {
@@ -350,15 +390,26 @@ footer{
         transition: all .7s;
     }
     
-    #consola>textarea {
+    #consolita {
         margin: 5%;
-        height: 80px;
+        height: 300px;
         width: 85%;
     }
-    
+   
+    #copiador{
+        margin: 10px 25%;
+        font-size: 2em;
+    }
+
+    #visualizador{
+        font-size: 2em;
+        margin-right: 5px;
+        margin-top: 20px;
+    }
+
     footer{
         height: auto;
-        font-size: small;
+        font-size: 2em;
         padding: 10px;
         position: fixed;
         min-width: 100%;
